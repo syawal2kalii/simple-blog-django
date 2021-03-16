@@ -1,4 +1,7 @@
-{% extends "blogsHome/base/base.html" %} {% block content %}
+{% extends "blogsHome/base/base.html" %}
+<!-- harus ada pembungkus -->
+<div>{% block title %} {{title}} {% endblock %}</div>
+{% block content %}
 <div id="blog" class="blog-area mt-2">
   <div class="container">
     <div class="row">
@@ -41,4 +44,4 @@
     </div>
   </div>
 </div>
-{% endblock content %}
+{% endblock %}

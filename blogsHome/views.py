@@ -5,5 +5,9 @@ from django.http import HttpResponse
 def blogs(request):
     print("a")
     # return HttpResponse("test")
-    return render(request, 'blogsHome/index.html')
+    context = {
+        "title": "Blogs",
+
+    }
+    return render(request, 'blogsHome/index.html', context)
 # Create your views here.

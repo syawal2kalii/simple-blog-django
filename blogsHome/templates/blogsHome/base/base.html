@@ -9,10 +9,10 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <title>{% block title %} {% endblock %}</title>
+    <title>{% block title %} {% endblock title%}</title>
   </head>
   <body>
-    {% include "blogsHome/base/navbar.html" %}
+    <div>{% include "blogsHome/base/navbar.html" %}</div>
     <div>{% block content %} {% endblock content %}</div>
   </body>
 </html>
